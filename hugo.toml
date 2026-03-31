@@ -1,5 +1,6 @@
 baseURL = 'https://jetsquirrel.github.io/claude-code-study/'
 languageCode = 'zh-CN'
+defaultContentLanguage = 'zh'
 title = '深入Claude Code：AI Agent架构设计与工程实践'
 theme = 'hugo-book'
 
