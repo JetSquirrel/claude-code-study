@@ -2,6 +2,11 @@
 
 > 基于 Claude Code 源码的深度剖析，从架构设计到工程实践的完整指南
 
+> [!TIP]
+> **在线阅读：** [https://jetsquirrel.github.io/claude-code-study/](https://jetsquirrel.github.io/claude-code-study/)
+>
+> 本书已使用 Hugo Book 主题部署到 GitHub Pages，支持搜索、深色模式等功能。
+
 > [!IMPORTANT]
 > **声明：本书完全由 AI (Claude Code Opus 4.6) 生成，仅供学习和研究参考。**
 > 内容基于对 Claude Code 源码的自动化分析生成，可能存在理解偏差或不准确之处。
