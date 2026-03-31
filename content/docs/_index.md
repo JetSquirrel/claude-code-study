@@ -1,16 +1,19 @@
+---
+title: "深入Claude Code：AI Agent架构设计与工程实践"
+type: docs
+bookToc: false
+weight: 1
+---
+
 # 《深入Claude Code：AI Agent架构设计与工程实践》
 
 > 基于 Claude Code 源码的深度剖析，从架构设计到工程实践的完整指南
 
-> [!TIP]
-> **在线阅读：** [https://jetsquirrel.github.io/claude-code-study/](https://jetsquirrel.github.io/claude-code-study/)
->
-> 本书已使用 Hugo Book 主题部署到 GitHub Pages，支持搜索、深色模式等功能。
-
-> [!IMPORTANT]
-> **声明：本书完全由 AI (Claude Code Opus 4.6) 生成，仅供学习和研究参考。**
-> 内容基于对 Claude Code 源码的自动化分析生成，可能存在理解偏差或不准确之处。
-> 请结合实际源码阅读，独立验证关键细节，不作为官方文档使用。
+{{< hint warning >}}
+**声明：本书完全由 AI (Claude Code Opus 4.6) 生成，仅供学习和研究参考。**
+内容基于对 Claude Code 源码的自动化分析生成，可能存在理解偏差或不准确之处。
+请结合实际源码阅读，独立验证关键细节，不作为官方文档使用。
+{{< /hint >}}
 
 ## 关于本书
 
@@ -26,35 +29,35 @@ Claude Code 不是一个简单的代码补全工具，而是一个完整的 AI A
 
 | 章节 | 内容 |
 |------|------|
-| [第一章：导论与项目概览](chapters/01-导论与项目概览/) | Claude Code 是什么、技术栈、代码规模 |
-| [第二章：整体架构设计](chapters/02-整体架构设计/) | 五层架构、核心数据流、模块关系 |
-| [第三章：启动与初始化流程](chapters/03-启动与初始化流程/) | CLI 入口、初始化序列、REPL 启动、性能优化 |
+| [第一章：导论与项目概览](01-导论与项目概览/) | Claude Code 是什么、技术栈、代码规模 |
+| [第二章：整体架构设计](02-整体架构设计/) | 五层架构、核心数据流、模块关系 |
+| [第三章：启动与初始化流程](03-启动与初始化流程/) | CLI 入口、初始化序列、REPL 启动、性能优化 |
 
 ### 第二部分：核心引擎
 
 | 章节 | 内容 |
 |------|------|
-| [第四章：查询引擎与对话循环](chapters/04-查询引擎与对话循环/) | QueryEngine 状态机、消息预处理管线、错误恢复策略 |
-| [第五章：工具系统](chapters/05-工具系统/) | Tool 类型系统、buildTool 工厂、9 个核心工具深度剖析 |
-| [第六章：权限与安全模型](chapters/06-权限与安全模型/) | 6 种权限模式、Bash 安全验证、YOLO 分类器 |
-| [第七章：Agent与多智能体系统](chapters/07-Agent与多智能体系统/) | 子 Agent 派生、团队/蜂群、邮箱通信、Coordinator 模式 |
+| [第四章：查询引擎与对话循环](04-查询引擎与对话循环/) | QueryEngine 状态机、消息预处理管线、错误恢复策略 |
+| [第五章：工具系统](05-工具系统/) | Tool 类型系统、buildTool 工厂、9 个核心工具深度剖析 |
+| [第六章：权限与安全模型](06-权限与安全模型/) | 6 种权限模式、Bash 安全验证、YOLO 分类器 |
+| [第七章：Agent与多智能体系统](07-Agent与多智能体系统/) | 子 Agent 派生、团队/蜂群、邮箱通信、Coordinator 模式 |
 
 ### 第三部分：基础设施
 
 | 章节 | 内容 |
 |------|------|
-| [第八章：MCP协议集成](chapters/08-MCP协议集成/) | MCP 客户端、7 种传输协议、工具包装、OAuth 认证 |
-| [第九章：状态管理](chapters/09-状态管理/) | 双层状态架构、React Context 层次、Selector 模式 |
-| [第十章：终端UI框架](chapters/10-终端UI框架/) | 自定义 Ink 引擎、Yoga 布局、ANSI 渲染管线 |
+| [第八章：MCP协议集成](08-MCP协议集成/) | MCP 客户端、7 种传输协议、工具包装、OAuth 认证 |
+| [第九章：状态管理](09-状态管理/) | 双层状态架构、React Context 层次、Selector 模式 |
+| [第十章：终端UI框架](10-终端UI框架/) | 自定义 Ink 引擎、Yoga 布局、ANSI 渲染管线 |
 
 ### 第四部分：进阶主题
 
 | 章节 | 内容 |
 |------|------|
-| [第十一章：上下文窗口管理与System Prompt工程](chapters/11-上下文窗口管理与System-Prompt工程/) | Prompt 构建管线、Token 预算、4 级压缩策略 |
-| [第十二章：记忆、持久化与会话管理](chapters/12-记忆持久化与会话管理/) | Memory 系统、会话存储、历史记录、成本追踪 |
-| [第十三章：Hooks、Skills与插件扩展](chapters/13-Hooks-Skills与插件扩展/) | Hook 事件系统、Skill 加载、Plugin 架构 |
-| [第十四章：设计模式与Agent开发实践](chapters/14-设计模式与Agent开发实践/) | 8 个可复用模式、Agent 开发实战、性能与安全清单 |
+| [第十一章：上下文窗口管理与System Prompt工程](11-上下文窗口管理与System-Prompt工程/) | Prompt 构建管线、Token 预算、4 级压缩策略 |
+| [第十二章：记忆、持久化与会话管理](12-记忆持久化与会话管理/) | Memory 系统、会话存储、历史记录、成本追踪 |
+| [第十三章：Hooks、Skills与插件扩展](13-Hooks-Skills与插件扩展/) | Hook 事件系统、Skill 加载、Plugin 架构 |
+| [第十四章：设计模式与Agent开发实践](14-设计模式与Agent开发实践/) | 8 个可复用模式、Agent 开发实战、性能与安全清单 |
 
 ## 核心架构图
 
