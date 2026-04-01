@@ -20,7 +20,7 @@ Claude Code 不是一个简单的代码补全工具，而是一个完整的 AI A
 
 ## 目录
 
-全书共 14 章，分为四个部分：
+全书共 15 章，分为四个部分：
 
 ### 第一部分：基础架构
 
@@ -55,6 +55,7 @@ Claude Code 不是一个简单的代码补全工具，而是一个完整的 AI A
 | [第十二章：记忆、持久化与会话管理](chapters/12-记忆持久化与会话管理/) | Memory 系统、会话存储、历史记录、成本追踪 |
 | [第十三章：Hooks、Skills与插件扩展](chapters/13-Hooks-Skills与插件扩展/) | Hook 事件系统、Skill 加载、Plugin 架构 |
 | [第十四章：设计模式与Agent开发实践](chapters/14-设计模式与Agent开发实践/) | 8 个可复用模式、Agent 开发实战、性能与安全清单 |
+| [第十五章：Agent可观测性设计](chapters/15-Agent可观测性设计/) | 三层可观测性架构、统一关联键、Agent 语义级 Span、Event/Metric/Trace 分离 |
 
 ## 核心架构图
 
